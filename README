@@ -6,6 +6,9 @@ https://github.com/RailsApps/rails_apps_composer
 provided by the RailsApps Project:
 http://railsapps.github.io/
 
+You can copy Devise views (for customization) to your app by running:
+rails g devise:views
+
 ________________________
 
 Recipes:
@@ -41,21 +44,20 @@ Preferences:
 * integration: none
 * continuous_testing: none
 * fixtures: factory_girl
-* frontend: simple
+* frontend: bootstrap3
 * email: gmail
 * authentication: devise
 * devise_modules: default
 * authorization: cancan
-* form_builder: simple_form
+* form_builder: none
 * starter_app: admin_app
 * rvmrc: false
 * quiet_assets: true
-* local_env_file: foreman
+* local_env_file: figaro
 * better_errors: true
 * ban_spiders: true
-* jsruntime: true
-* github: true
 
 ________________________
 
 License
+

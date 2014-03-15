@@ -51,20 +51,18 @@ Preferences:
 * integration: none
 * continuous_testing: none
 * fixtures: factory_girl
-* frontend: simple
+* frontend: bootstrap3
 * email: gmail
 * authentication: devise
 * devise_modules: default
 * authorization: cancan
-* form_builder: simple_form
+* form_builder: none
 * starter_app: admin_app
 * rvmrc: false
 * quiet_assets: true
-* local_env_file: foreman
+* local_env_file: figaro
 * better_errors: true
 * ban_spiders: true
-* jsruntime: true
-* github: true
 
 Ruby on Rails
 -------------
@@ -86,8 +84,8 @@ Development
 
 -   Template Engine: Haml
 -   Testing Framework: RSpec and Factory Girl
--   Front-end Framework: None
--   Form Builder: SimpleForm
+-   Front-end Framework: Bootstrap 3.0 (Sass)
+-   Form Builder: None
 -   Authentication: Devise
 -   Authorization: CanCan
 -   Admin: None

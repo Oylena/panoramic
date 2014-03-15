@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Panoramic::Application.config.secret_key_base = '8d90b8947bf4a59256c5efb07f3e81dde1dc6862b1daa350aff126815066c84caa745a27e59677aee7c91a6878264fbf99da6fa042d5c514addb162e38d94eca'
+Panoramic::Application.config.secret_key_base = '0e95f9b2fab312962e572e0b79bbd558457b6b88d1c8c29c48ff9ec2bab0209f0e36f3fa20dc73c7d403c92c6c4388c07020dc3221f36bf350e6c19b41606766'
