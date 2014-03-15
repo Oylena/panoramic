@@ -1,5 +1,9 @@
 jQuery ->
   $('#parcel_size_slider').slider()
+  $('#parcel_size_slider').slider().on "slide", (val) ->
+    $('#parcel_size_slider_val1').text(val.value)
+    
+  
   $('#parcel_height_slider').slider()
   $('#parcel_dencity_slider').slider()
   $('#parcel_transit_distance_slider').slider()

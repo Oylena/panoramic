@@ -1,6 +1,5 @@
 %h3 Query Page
 
-
 .quiery-page.container-fluid
   .row
     .quiery-tool.col-md-2.col-md-offset-2
@@ -40,7 +39,13 @@
 
       Parcel Size (ft^2)
       %br
+      Val:
+      %span#parcel_size_slider_val1
+        1
+      %br
       %input.slider#parcel_size_slider{"data-slider-id" => "parcel_size", "data-slider-min" => "5000", "data-slider-max" => "37000", "data-slider-step" => "10", "data-slider-value" => "[10000, 30000]", type: "text"}
+      %br
+      %span#parcel_size_slider_val2
       %br
       %br
 
