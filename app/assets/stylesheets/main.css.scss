@@ -1,0 +1,39 @@
+.quiery-page {
+  min-height: 300px;
+
+  .quiery-tool {
+    border: 2px solid lightgray;
+    min-height: 300px;
+
+    #parcel_size {
+      .slider-handle {
+        border-bottom-color: blue;
+        border-width: 0 10px 10px 10px;
+      }
+      .slider-selection {
+        background: #8283FF;
+      }
+    }
+  }
+  .quiery-results {
+    border: 2px solid lightgray;
+    min-height: 300px;
+
+    .tab-buttons {
+      border: 2px solid lightgray;
+    }
+    .map-view {
+      border: 2px solid lightgray;
+      height: 100%;
+    }
+    .list-view {
+      border: 2px solid lightgray;
+      display: none;
+    }
+    .flagged-view {
+      border: 2px solid lightgray;
+      display: none;
+    }
+  }
+
+}

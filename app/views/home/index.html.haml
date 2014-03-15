@@ -1,1 +1,156 @@
-%h3 Home
+%h3 Query Page
+
+
+.quiery-page.container-fluid
+  .row
+    .quiery-tool.col-md-2.col-md-offset-2
+      Neighborhood
+      %br
+      = select_tag "credit_card", options_for_select([ "SELECT", "CITY-2", "CITY-3" ], "SELECT" )
+      %br
+      %br
+
+      Zoned Use:
+      %br
+      = label_tag :residential do
+        = check_box_tag :residential, 'filter-residential'
+        Residential
+      = label_tag :mixed_use do
+        = check_box_tag :mixed_use, 'filter-mixed_use'
+        Mixed Use
+      %br
+
+      = label_tag :office do
+        = check_box_tag :office, 'filter-office'
+        Office
+      = label_tag :agriculture do
+        = check_box_tag :agriculture, 'filter-agriculture'
+        Agriculture
+      %br
+
+      = label_tag :retail do
+        = check_box_tag :retail, 'filter-retail'
+        Retail
+      = label_tag :other do
+        = check_box_tag :other, 'filter-other'
+        Other
+      %br
+      %br
+      
+
+      Parcel Size (ft^2)
+      %br
+      %input.slider#parcel_size_slider{"data-slider-id" => "parcel_size", "data-slider-min" => "5000", "data-slider-max" => "37000", "data-slider-step" => "10", "data-slider-value" => "[10000, 30000]", type: "text"}
+      %br
+      %br
+
+      Height(ft)
+      %br
+      %input.slider#parcel_height_slider{"data-slider-id" => "parcel_height", "data-slider-min" => "24", "data-slider-max" => "80", "data-slider-step" => "2", "data-slider-value" => "[30, 50]", type: "text"}
+      %br
+      %br
+
+      Dencity (units/mile^2)
+      %br
+      %input.slider#parcel_dencity_slider{"data-slider-id" => "parcel_dencity", "data-slider-min" => "24", "data-slider-max" => "80", "data-slider-step" => "2", "data-slider-value" => "[30, 50]", type: "text"}
+      %br
+      %br
+
+      Transit Distance (ft)
+      %br
+      %input.slider#parcel_transit_distance_slider{"data-slider-id" => "parcel_transit_distance", "data-slider-min" => "24", "data-slider-max" => "80", "data-slider-step" => "2", "data-slider-value" => "[30, 50]", type: "text"}
+      %br
+      %br
+
+
+
+
+      
+    .quiery-results.col-md-6
+      .container-fluid
+        .row
+          .tab-buttons.col-md-12
+            %button.btn.btn-default#map_view_btn{type: "button"} Map View
+            %button.btn.btn-default#list_view_btn{type: "button"} List View
+            %button.btn.btn-default#flagged_view_btn{type: "button"} Flagged
+        .row
+          .map-view.col-md-12           
+            google view
+            
+
+
+
+          .list-view.col-md-12
+            
+            %table.table.table-bordered
+              %caption
+                list view
+              %thead
+                %tr
+                  %th
+                    Parcel
+                  %th
+                    Address
+                  %th
+                    Build Date
+                  %th
+                    Build Area (ft^2)
+                  %th
+                    Parcel Area (ft^2)
+                  %th
+                    Unit
+                  %th
+                    Stories
+              %tbody
+                %tr
+                  %td 21
+                  %td 22
+                  %td 23
+                  %td 24
+                  %td 25
+                  %td 26
+                  %td 27
+
+
+        
+            %table
+          .flagged-view.col-md-12
+            %table.table.table-bordered
+              %caption
+                Flagged
+              %thead
+                %tr
+                  %th
+                    Parcel
+                  %th
+                    Address
+                  %th
+                    Build Date
+                  %th
+                    Build Area (ft^2)
+                  %th
+                    Parcel Area (ft^2)
+                  %th
+                    Unit
+                  %th
+                    Stories
+              %tbody
+                %tr
+                  %td 31
+                  %td 32
+                  %td 33
+                  %td 34
+                  %td 35
+                  %td 36
+                  %td 37
+                %tr
+                  %td 531
+                  %td 532
+                  %td 363
+                  %td 434
+                  %td 535
+                  %td 356
+                  %td 376
+
+
+        
